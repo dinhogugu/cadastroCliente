@@ -1,9 +1,5 @@
 <?php
-//session_start();
-	//if(!isset($_SESSION['idUsuario'])){
-	//header("location:index2.php");
-	//exit;
-//}
+
 require_once 'viacep.php';
 require_once 'cadastroip.php';
 $c = new Cadastroip

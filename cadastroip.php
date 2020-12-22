@@ -29,13 +29,5 @@ Class Cadastroip {
 		$sql->execute();
 		return true;
 	}
-	public function consulta($pesquisar){
-	global $pdo;
-		$sql = $pdo->prepare("SELECT nomeParceiro FROM cad_parceiro WHERE $pesquisar= ''");
-		$sql->execute();
-		$result = $sql->fetchAll(PDO::FETCH_COLUMN);
-		
-		return true;
-	}
 }
 	?>

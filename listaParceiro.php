@@ -1,12 +1,4 @@
 <?php
-
-// session_start();
-// if(!isset($_SESSION['idUsuario'])){
-//  header("location:index2.php");
-//  exit;
-// }
-?>
-<?php
 require_once 'cadastroip.php';
 $c = new Cadastroip;
 ?>
