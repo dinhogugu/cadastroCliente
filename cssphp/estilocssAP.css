@@ -1,0 +1,57 @@
+body{
+	background-image: url("../imagens/nuvem.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position:center;
+	}
+
+.form-all{
+	width:700px;
+	box-sizing: 50px;
+	text-align: center;
+	margin: 130px auto 0px auto;
+	font-family: arial; 
+	color:white;
+	font-color: black;
+  }
+
+.tables{
+	width:1300px;
+	text-align: center;
+	margin: 50px auto 0px auto;
+	border-radius: 50px;
+}
+
+input[type=submit]{
+	background-color: #0000;
+	border: none;
+	cursor: pointer;
+	color:white;
+}
+
+div#msg-sucesso{
+	width:390px;
+	margin:30px auto;
+	padding:10px;
+	background-color:rgba(50,205,50,.3);
+	border:1px solid rgba(34,139,34,.3);
+	color: white;
+}
+
+div.msg-erro{
+	width:390px;
+	margin:30px auto;
+	padding:10px;
+	background-color:rgba(250,128,114,.3);
+	border:1px solid rgba(164,42,42,.3);
+	color: white;
+	
+}
+
+.form-inline{
+	margin: 0 15px;
+}
+
+button{
+	margin: 50 200px;
+}
