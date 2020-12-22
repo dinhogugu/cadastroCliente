@@ -97,7 +97,7 @@ $c = new Cadastroip
     	</div>
   	</div>
   		<button type="submit" class="btn btn-primary" value = "Cadastrar">Cadastrar</button>
-  		<!-- <input type="submit" value = "Cadastrar"> -->
+  		
   </div>
 </form>
     <!-- Optional JavaScript -->

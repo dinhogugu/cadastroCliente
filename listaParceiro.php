@@ -75,22 +75,22 @@ $c = new Cadastroip;
     </tr>
   </thead>
   <?php 
-       $i= 0;
+      $i= 0;
       while(!empty($result[$i])){ 
-    $bairro           = $result[$i]['bairro'];
-    $cidade           = $result[$i]['cidade'];
-    $complemento      = $result[$i]['complemento'];
-    $dataNascimento   = $result[$i]['dataNascimento'];
-    $andress          = $result[$i]['endereco'];
-    $estado           = $result[$i]['estado'];
-    $nomeParceiro     = $result[$i]['nomeParceiro'];
-    $numero           = $result[$i]['numero'];
-    $sexo             = $result[$i]['sexo'];
-    $idParceiro       = $result[$i]['idParceiro'];
-    $cep              = $result[$i]['cep'];
-    $situacao         = $result[$i]['situacao'];
+        $bairro           = $result[$i]['bairro'];
+        $cidade           = $result[$i]['cidade'];
+        $complemento      = $result[$i]['complemento'];
+        $dataNascimento   = $result[$i]['dataNascimento'];
+        $andress          = $result[$i]['endereco'];
+        $estado           = $result[$i]['estado'];
+        $nomeParceiro     = $result[$i]['nomeParceiro'];
+        $numero           = $result[$i]['numero'];
+        $sexo             = $result[$i]['sexo'];
+        $idParceiro       = $result[$i]['idParceiro'];
+        $cep              = $result[$i]['cep'];
+        $situacao         = $result[$i]['situacao'];
 
-    $i++;
+        $i++;
   ?>
   
   <tbody>
@@ -202,22 +202,22 @@ $c = new Cadastroip;
         </form>
         <?php
           if(isset($_POST['cep'])){
-          $id                   = addslashes($_POST['id']);
-          $nomeParceiro         = addslashes($_POST['nome']);
-          $nascParceiro         = addslashes($_POST['nasc']);
-          $sexoParceiro         = addslashes($_POST['sexo']);
-          $cepParceiro          = addslashes($_POST['cep']);
-          $enderecoParceiro     = addslashes($_POST['endereco']);
-          $numeroParceiro       = addslashes($_POST['numero']);
-          $complementoParceiro  = addslashes($_POST['complemento']);
-          $cidadeParceiro       = addslashes($_POST['cidade']);
-          $bairroParceiro       = addslashes($_POST['bairro']);
-          $estadoParceiro       = addslashes($_POST['estado']);
+            $id                   = addslashes($_POST['id']);
+            $nomeParceiro         = addslashes($_POST['nome']);
+            $nascParceiro         = addslashes($_POST['nasc']);
+            $sexoParceiro         = addslashes($_POST['sexo']);
+            $cepParceiro          = addslashes($_POST['cep']);
+            $enderecoParceiro     = addslashes($_POST['endereco']);
+            $numeroParceiro       = addslashes($_POST['numero']);
+            $complementoParceiro  = addslashes($_POST['complemento']);
+            $cidadeParceiro       = addslashes($_POST['cidade']);
+            $bairroParceiro       = addslashes($_POST['bairro']);
+            $estadoParceiro       = addslashes($_POST['estado']);
 
-          $c->conectar("hudson","localhost","root","");
-          global $pdo;
-          $updateParceiro = $pdo->prepare("UPDATE cad_parceiro SET nomeParceiro='$nomeParceiro',dataNascimento = STR_TO_DATE('$nascParceiro','%d/%m/%Y'),sexo='$sexoParceiro',cep='$cepParceiro',endereco='$enderecoParceiro',numero='$numeroParceiro',complemento='$complementoParceiro',cidade='$cidadeParceiro',bairro='$bairroParceiro',estado='$estadoParceiro' WHERE idParceiro='$id'");
-          $updateParceiro->execute();
+            $c->conectar("hudson","localhost","root","");
+            global $pdo;
+            $updateParceiro = $pdo->prepare("UPDATE cad_parceiro SET nomeParceiro='$nomeParceiro',dataNascimento = STR_TO_DATE('$nascParceiro','%d/%m/%Y'),sexo='$sexoParceiro',cep='$cepParceiro',endereco='$enderecoParceiro',numero='$numeroParceiro',complemento='$complementoParceiro',cidade='$cidadeParceiro',bairro='$bairroParceiro',estado='$estadoParceiro' WHERE idParceiro='$id'");
+            $updateParceiro->execute();
           }
         ?>
       </div>
@@ -248,7 +248,6 @@ $c = new Cadastroip;
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="js/personalizado.js"></script>
 
     <!-- java script modal -->
     <script type="text/javascript">
