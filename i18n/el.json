@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Nikosgranturismogt"
-		]
-	},
-	"mpdf-action": "Εξαγωγή PDF",
-	"mpdf-desc": "Μετατρέπει την τρέχουσα σελίδα σε PDF και την στέλνει στο περιηγητή"
-}
